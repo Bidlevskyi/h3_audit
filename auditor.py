@@ -1,3 +1,4 @@
+import rabbitpy
 from getter import Getter
 from extractor import Extractor
 from analyzer import Analyzer
@@ -8,7 +9,8 @@ class Auditor:
         self.getter = Getter()
         self.extractor = Extractor()
         self.analyzer = Analyzer()
-
+    def rut(self):
+        with rabbitpy.Connnection() as connection
     def work(self, url_list):
         if isinstance(url_list, str):
             url_list = [url_list]

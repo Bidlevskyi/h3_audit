@@ -60,4 +60,3 @@ if __name__ == "__main__":
     response = requests.get('https://www.python.org', headers=headers)
     # print(response.text)
     extractor = Extractor(response.text)
-    print(extractor.work())
